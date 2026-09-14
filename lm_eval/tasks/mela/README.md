@@ -43,7 +43,7 @@ Homepage: https://github.com/sjtu-compling/MELA
 - `mela_es`: Spanish
 - `mela_ja`: Japanese
 - `mela_ar`: Arabic
-- `mela_ar`: Icelandic
+- `mela_is`: Icelandic
 
 ### Checklist
 
