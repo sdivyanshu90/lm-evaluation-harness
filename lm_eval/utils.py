@@ -745,12 +745,13 @@ class RemoteTokenizer:
 
     def _request_with_retries(self, method, url, **kwargs):
         last_exc = None
+        timeout = kwargs.pop("timeout", self.timeout)
         for _ in range(self.max_retries):
             try:
                 resp = self.session.request(
                     method,
                     url,
-                    timeout=kwargs.pop("timeout", self.timeout),
+                    timeout=timeout,
                     verify=self.cert_config,
                     **kwargs,
                 )
